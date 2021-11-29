@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.nav {
+    display: grid;
+    height: 150px;
+    width: 100vw;
+    grid-template-areas: 
+    "logo search search membership favorites locator cart"
+    "logo november uki new all-products opportunity accessory";
+    grid-template-columns: 2fr 3fr 1fr 1fr 1fr  ;
+    grid-template-rows: 1fr 1fr 1fr ;
+    text-align: center;
+
+}
+
+.nav input {
+    width: 390px; 
+    height: 38px;     
+    border: none;
+    background: url(./search.png) no-repeat;
+    background-size: 25px auto;
+    background-position: 95% 50%;
+    background-color: rgb(227, 227, 240);
+}
+
+.nav > .box1 {
+    grid-area: logo;
+    padding: 35px 20px;
+}
+
+.nav > .box2 {
+    grid-area: search;
+    padding-top: 20px;
+    border-bottom: 1px solid black;
+}
+
+
+
+.firstBox{
+    
+        grid-area: firstBox;
+        border: 1px solid grey;
+        font-size: 18px;
+        padding-top: 40px;
+        background: url(./shipped.png) no-repeat;
+        background-size: 40px auto;
+        background-position: 50% 3%;
+        width: 300px;
+        
+    
+}
+.secondBox{
+    grid-area: secondBox;
+    border: 1px solid grey;
+    font-size: 18px;
+    padding-top: 40px;
+    background: url(./credit-card.png) no-repeat;
+    background-size: 40px auto;
+    background-position: 50% -5%;
+    width: 300px;
+    margin-left: 300px;
+    
+    
+
+}
+.thirdBox{
+    grid-area: thirdBox;
+    border: 1px solid grey;
+    font-size: 18px;
+    padding-top: 40px;
+    background: url(./credit-card-blocked.png) no-repeat;
+    background-size: 40px auto;
+    background-position: 50% -5%;
+    width: 300px;
+    margin-left: 600px;
+}
+
+.fourthBox{
+    grid-area: fourthBox;
+    border: 1px solid grey;
+    font-size: 18px;
+    padding-top: 40px;
+    background: url(./monitor.png) no-repeat;
+    background-size: 40px auto;
+    background-position: 50% -5%;
+    width: 300px;
+    margin-left: 900px;
+
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 200px 200px 200px 150px;
+    gap:150px;
+}
+
+.list{
+    display: flex;
+    flex-direction: row;
+    gap:30px;
+    display: flex;
+    justify-content: center;
+}
+.description{
+    font-size: 18px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.lastprice{
+    color:rgb(87,85,85);
+    text-decoration: line-through;
+}
+.actualprice{
+    font-weight: bold;
+}
