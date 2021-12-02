@@ -118,3 +118,134 @@
 .actualprice{
     font-weight: bold;
 }
+
+.list2{
+    display: flex;
+    flex-direction: row;
+    gap:30px;
+    display: flex;
+    justify-content: center;
+}
+.description2{
+    font-size: 18px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.subscription {
+    margin-top: 50px;    
+    font-size: 16px;
+    display: grid;
+    width: 100vw;
+    height: 150px;
+
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    background-color: rgb(236, 236, 236);
+}
+
+footer .goto {
+    grid-area: goto;   
+    padding-top: 40px; 
+    padding-left: 300px;
+    padding-right: 100px;
+    line-height: 25px;
+}
+
+.goto{
+    margin: 10px;
+}
+.subscription hr {
+    transform: rotate(90deg);
+    width: 80px;
+    color: rgb(54, 54, 54);
+    position: absolute;
+    margin-left: 700px;
+    margin-top: 65px;
+}
+
+.footer .subform {
+    grid-area: subform ;
+    padding-top: 3px; 
+    padding-bottom: 20px;
+    padding-left: 60px;
+    line-height: 45px;
+}
+
+.footer input {  
+    width: 400px; 
+    height: 40px;  
+    border: 1px solid grey;
+    background: url(./next.png) no-repeat;
+    background-size: 25px auto;
+    background-position: 95% 50%;
+}
+
+.contacts {
+    display: grid;
+    width: 100vw;
+    height: 300px;
+    grid-template-areas: 
+    "corp help-info social";
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-top: 40px;     
+    font-size: 14
+}
+
+ .corporate{
+    grid-area: corp;    
+    padding-left: 300px;
+    line-height: 40px;
+}
+
+ .help{
+    grid-area: help-info;
+    padding-left: 100px;
+    line-height: 40px;
+}
+
+ .Social{
+   display: flex;
+   flex-direction: row;
+}
+
+.Social img {
+    height: 15px;
+    width: auto;
+    margin-top: 20px;
+    margin-left: 5px;
+    margin-bottom: 20px;
+}
+
+.social hr {
+    width: 200px;
+    margin-bottom: 20px;
+}
+.address {
+    margin-left: 10px;
+    background-image: url(./location.png);
+    background-repeat: no-repeat;
+    background-size: 25px auto;
+    background-position: left top;
+    padding-left: 30px;
+}
+
+.phone {
+    background-image: url(./phone.png);
+    background-repeat: no-repeat;
+    background-size: 15px auto;
+    background-position: 25% top;
+    padding-left: 100px;
+}
+
+.mail {
+    background-image: url(./email.png);
+    background-repeat: no-repeat;
+    background-size: 20px auto;
+    background-position: 5% top;
+    padding-left: 50px;
+}
+
+
+
